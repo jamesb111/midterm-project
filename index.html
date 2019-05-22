@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game of Memory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <section class="title">
+            <h1>Game of Memory</h1>
+        </section>
+        <section class="btn_container">
+            <img src="./images/sword.png" alt="" class="start_btn">
+            <p class="timer"></p>
+            <img src="./images/shield.png" alt="" class="reset_btn">
+        </section>
+        <section id="game" class="card_grid">
+            <p class="instructions top_left"><i class="material-icons">
+                    arrow_upward
+                </i>Start Game</p>
+            <p class="instructions top_right">Reset Game<i class="material-icons">
+                    arrow_upward
+                </i></p>
+            <img class="cover" src="https://data.whicdn.com/images/241579758/original.gif" alt="">
+        </section>
+
+        <section id="bran_popup" class="overlay">
+            <div class="popup">
+                <p class="win">You won</p>
+                <p class="play_again">It took you <span id="finalTime"></span> to hold the door.</p>
+                <p class="play_again">Click on the shield to play again</p>
+                <!-- <img src="./images/bran.jpg" alt=""> -->
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
